@@ -1,0 +1,76 @@
+{
+  "name": "threejs-boilerplate",
+  "author": "Ustym Ukhman <ustym.ukhman@gmail.com>",
+  "description": "Three.js + TypeScript + Svelte + Jest + Vite",
+  "homepage": "https://github.com/UstymUkhman/threejs-boilerplate#readme",
+  "main": "src/main.ts",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UstymUkhman/threejs-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UstymUkhman/threejs-boilerplate/issues",
+    "email": "ustym.ukhman@gmail.com"
+  },
+  "keywords": [
+    "vite",
+    "webgl",
+    "webgl2",
+    "svelte",
+    "threejs",
+    "template",
+    "javascript",
+    "typescript"
+  ],
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test:cover": "yarn test --coverage",
+    "lint:js": "eslint src/**/*.{ts,tsx,js,jsx}",
+    "lint:css": "stylelint **/*.{svelte,scss,css}",
+    "test": "./node_modules/.bin/jest --notify --silent",
+    "test:clear": "./node_modules/.bin/jest --clearCache",
+    "test:watch": "./node_modules/.bin/jest --watchAll --silent"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "three": "^0.134.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-export-namespace-from": "^7.16.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@types/animejs": "^3.1.4",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.6",
+    "@types/three": "^0.133.1",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "^8.2.0",
+    "install": "^0.13.0",
+    "jest": "^27.3.1",
+    "jest-canvas-mock": "^2.3.1",
+    "node-notifier": "^10.0.0",
+    "postcss": "^8.3.11",
+    "postcss-html": "^1.2.0",
+    "postcss-scss": "^4.0.2",
+    "sass": "^1.43.4",
+    "stylelint": "^14.0.1",
+    "stylelint-config-standard": "^23.0.0",
+    "svelte": "^3.44.1",
+    "svelte-preprocess": "^4.9.8",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4",
+    "vite": "^2.6.13",
+    "vite-plugin-glsl": "^0.0.5"
+  },
+  "engines": {
+    "node": ">= 14.17.0",
+    "npm": ">= 6.14.13"
+  }
+}
